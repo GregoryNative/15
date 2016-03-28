@@ -1,5 +1,5 @@
 /*
- * 15-Puzzle game.
+ * 15 Puzzle game.
  * Copyright (C) 2016 Gregory Wizard
  *
  * This program is free software; you can redistribute it and/or modify
@@ -102,7 +102,7 @@ public class Author extends AppCompatActivity {
     private class buttonDefaultListener implements View.OnClickListener {
 
         public void onClick(View _v) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/GregoryWizard/FifteenthGame"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/GregoryWizard/15"));
             startActivity(browserIntent);
 
         }
