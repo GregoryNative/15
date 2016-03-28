@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">15</string>
+
+    <string name="action_newgame">Play</string>
+    <string name="settings">Settings</string>
+    <string name="sounds">Sounds</string>
+    <string name="language">Language</string>
+    <string name="i_default">Default</string>
+    <string name="besttime">Best </string>
+    <string name="curtime">Current</string>
+    <string name="countgame">Game</string>
+    <string name="info">Info</string>
+    <string name="infoabout">The 15-puzzle (also called Gem Puzzle, Boss Puzzle, Game of Fifteen, Mystic Square and many others) is a sliding puzzle that consists of a frame of numbered square tiles in random order with one tile missing.</string>
+    <string name="about">About</string>
+    <string name="abouttext">Hi, Im Gregory and its my open-source game. More information or help.</string>
+
+    <string name="raction_newgame">Играть</string>
+    <string name="rsettings">Настройки</string>
+    <string name="rsounds">Звук</string>
+    <string name="rlanguage">Язык</string>
+    <string name="ri_default">Сбросить</string>
+    <string name="rbesttime">Лучший</string>
+    <string name="rcurtime">Текущий</string>
+    <string name="rcountgame">Игра</string>
+    <string name="rinfo">Про игру</string>
+    <string name="rinfoabout">Игра в 15 или пятнашки — популярная головоломка, которая представляет собой набор одинаковых квадратных костяшек с нанесёнными числами. Цель игры — перемещая костяшки по коробке, добиться упорядочивания их по номерам, желательно сделав как можно меньше перемещений.</string>
+    <string name="rabout">Автор</string>
+    <string name="rabouttext">Не так уж и интересно про автора, короче приятных Вам пятнашек. Для получения дополнительной информации нажмите на кнопку снизу.</string>
+
+</resources>

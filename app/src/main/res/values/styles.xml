@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:typeface">monospace</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#58d175</item>
+    </style>
+
+    <style name="FlatButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlHighlight">@color/light_grey</item>
+        <item name="android:typeface">monospace</item>
+        <item name="colorControlNormal">@color/grey</item>
+    </style>
+
+    <style name="AppTheme.CustomTheme" >
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:background">@drawable/layout_border</item>
+    </style>
+
+    <style name="customSwitchStyle">
+        <item name="colorControlActivated">#58d175</item>
+        <item name="android:typeface">monospace</item>
+        <item name="colorSwitchThumbNormal">#58d175</item>
+        <item name="android:colorForeground">#58d175</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">#58d175</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+</resources>
