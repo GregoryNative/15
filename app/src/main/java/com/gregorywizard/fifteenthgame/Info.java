@@ -1,6 +1,6 @@
 /*
  * 15 Puzzle game.
- * Copyright (C) 2016 Gregory Wizard
+ * Copyright (C) 2016 Gregory Galushka
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
