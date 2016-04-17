@@ -841,4 +841,11 @@ public class GameActivity extends AppCompatActivity {
             } });
         adb.show();
     }
+
+    @Override
+    public void onBackPressed() {
+        if(soundBoolean) { audioManager.playSoundEffect(SoundEffectConstants.CLICK, 0.8F); }
+        Intent intent = new Intent(GameActivity.this, MainMenuActivity.class);
+        startActivity(intent);
+    }
 }

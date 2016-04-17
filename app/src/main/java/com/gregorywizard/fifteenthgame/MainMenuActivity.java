@@ -26,6 +26,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -47,6 +48,7 @@ import android.widget.Toast;
  */
 public class MainMenuActivity extends AppCompatActivity {
     public static final String DEFAULT = "NONE";
+    private Boolean exit = false;
 
     LinearLayout layout;
     ImageView    logo;
@@ -301,4 +303,21 @@ public class MainMenuActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        if (exit) {
+            finish(); // finish activity
+        } else {
+            Toast.makeText(this, "Press Back again to Exit.",
+                    Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            }, 3 * 1000);
+
+        }
+    }
 }
