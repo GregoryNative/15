@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'MyAndroidGregoryKey'
-            keyPassword 'M00nSpell'
-            storeFile file('/home/gregory/android/android_key.jks')
-            storePassword 'M00nSpell'
-        }
-    }
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
     defaultConfig {
