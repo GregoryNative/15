@@ -306,7 +306,7 @@ public class MainMenuActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (exit) {
-            finish(); // finish activity
+            System.exit(0); // finish activity
         } else {
             Toast.makeText(this, "Press Back again to Exit.",
                     Toast.LENGTH_SHORT).show();
