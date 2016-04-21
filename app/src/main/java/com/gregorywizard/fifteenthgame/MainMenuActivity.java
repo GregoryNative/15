@@ -26,6 +26,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -47,6 +48,7 @@ import android.widget.Toast;
  */
 public class MainMenuActivity extends AppCompatActivity {
     public static final String DEFAULT = "NONE";
+    private Boolean exit = false;
 
     LinearLayout layout;
     ImageView    logo;
@@ -209,6 +211,8 @@ public class MainMenuActivity extends AppCompatActivity {
             new_game.setVisibility(View.VISIBLE);
         }
 
+
+
     }
 
     private void setIconsSize(double _s) {
@@ -243,6 +247,7 @@ public class MainMenuActivity extends AppCompatActivity {
         if(soundBoolean) { audioManager.playSoundEffect(SoundEffectConstants.CLICK, 0.8F); }
         Intent intent = new Intent(MainMenuActivity.this, GameActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
 
     /* show author */
@@ -298,6 +303,24 @@ public class MainMenuActivity extends AppCompatActivity {
         } else {
             new_game.setText(R.string.raction_newgame);
             Log.d("LANG","FALSE - RUS");
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (exit) {
+            System.exit(0); // finish activity
+        } else {
+            Toast.makeText(this, "Press Back again to Exit.",
+                    Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            }, 3 * 1000);
+
         }
     }
 
