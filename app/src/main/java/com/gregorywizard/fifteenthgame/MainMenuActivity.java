@@ -309,7 +309,12 @@ public class MainMenuActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (exit) {
-            System.exit(0); // finish activity
+            //System.exit(0); // finish activity
+            finish();
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         } else {
             Toast.makeText(this, "Press Back again to Exit.",
                     Toast.LENGTH_SHORT).show();
